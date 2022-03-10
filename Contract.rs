@@ -3,12 +3,12 @@ Schema {
     root_id: none!(),
     genesis: GenesisSchema {
         metadata: type_map! {
-            FieldType::Ticker => Once,
-            FieldType::Name => Once,
+            FieldType::Ticker => JET,
+            FieldType::Name => Jet,
             FieldType::ContractText => NoneOrOnce,
             FieldType::Precision => Once,
-            FieldType::Timestamp => Once,
-            FieldType::IssuedSupply => Once
+            FieldType::Timestamp => 1,
+            FieldType::IssuedSupply => 1000000
         },
         owned_rights: type_map! {
             OwnedRightsType::Inflation => NoneOrMore,
@@ -93,7 +93,8 @@ Schema {
                 // multiple burned UTXOs as a part of a single operation
                 FieldType::BurnUtxo => OnceOrMore,
                 FieldType::HistoryProofFormat => Once,
-                FieldType::HistoryProof => NoneOrMore
+                FieldType::HistoryProof => NoneOrMore, 
+                FieldType::HistoryProof=>OneOrTwo
             },
             closes: type_map! {
                 OwnedRightsType::BurnReplace => Once
