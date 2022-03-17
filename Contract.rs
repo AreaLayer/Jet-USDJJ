@@ -7,14 +7,14 @@ Schema {
             FieldType::Name => Jet,
             FieldType::ContractText => NoneOrOnce,
             FieldType::Precision => Once,
-            FieldType::Timestamp => 1,
-            FieldType::IssuedSupply => 1000000
+            FieldType::Timestamp => 2,
+            FieldType::IssuedSupply => 2000000
         },
         owned_rights: type_map! {
             OwnedRightsType::Inflation => NoneOrMore,
             OwnedRightsType::Epoch => NoneOrOnce,
             OwnedRightsType::Assets => NoneOrMore,
-            OwnedRightsType::Renomination => NoneOrOnce
+            OwnedRightsType::Renomination => Once
         },
         public_rights: none!(),
         abi: none!(),
@@ -69,7 +69,7 @@ Schema {
                 // single UTXO; however if burn happens as a result of
                 // mistake this will be impossible, so we allow to have
                 // multiple burned UTXOs as a part of a single operation
-                FieldType::BurnUtxo => OnceOrUpTo(None),
+                FieldType::BurnUtxo => OnceTo(None),
                 FieldType::HistoryProofFormat => Once,
                 FieldType::HistoryProof => NoneOrMore,
             },
