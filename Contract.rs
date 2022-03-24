@@ -131,7 +131,7 @@ Schema {
         TransitionType::RightsSplit => TransitionSchema {
             metadata: none!(),
             closes: type_map! {
-                OwnedRightsType::Inflation => NoneOrMore,
+                OwnedRightsType::Inflation => Once,
                 OwnedRightsType::Assets => NoneOrMore,
                 OwnedRightsType::Epoch => NoneOrOnce,
                 OwnedRightsType::BurnReplace => NoneOrOnce,
