@@ -5,12 +5,16 @@ With use cases how Lending, borrow, collateral. We will use output and input for
 
 # Use Case
 
-*Collateral
+*Collateral;
 
-*Lending
+*Lending;
 
-*Borrow
+*Borrow;
 
-*Buy/Sell for Bitcoin
+*Buy/Sell for Bitcoin;
 
-*Decentralized
+*Decentralized.
+
+# Running Node RGB
+
+Source: https://github.com/Layer2Labs/rgb-node/blob/master/README.md
