@@ -57,7 +57,7 @@ Schema {
             },
             owned_rights: type_map! {
                 OwnedRightsType::Epoch => NoneOrOnce,
-                OwnedRightsType::BurnReplace => NoneOrOnce
+                OwnedRightsType::BurnReplace => Once
             },
             public_rights: none!(),
             abi: none!()
