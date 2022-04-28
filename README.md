@@ -20,3 +20,7 @@ With use cases how Lending, borrow, collateral. We will use output and input for
 # Running Node RGB
 
 Source: https://github.com/Layer2Labs/rgb-node/blob/master/README.md
+
+# Coming Soon
+
+*Oracles by DLC
