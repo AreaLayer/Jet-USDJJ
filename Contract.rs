@@ -3,7 +3,7 @@ Schema {
     root_id: none!(),
     genesis: GenesisSchema {
         metadata: type_map! {
-            FieldType::Ticker => JET,
+            FieldType::Ticker => USDJJ,
             FieldType::Name => Jet,
             FieldType::ContractText => NoneOrOnce,
             FieldType::Precision => Once,
