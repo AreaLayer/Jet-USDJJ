@@ -214,4 +214,7 @@ Schema {
         }
     },
     public_right_types: none!(),
+     DataType::Assets=>USD
+  format:StateFormat::APIData(https://api.coingecko.com/api/v3/simple/price?ids=usd%2Flist&vs_currencies=vs_usdt)
+
 }
