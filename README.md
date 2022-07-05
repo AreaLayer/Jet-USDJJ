@@ -23,4 +23,4 @@ Source: https://github.com/Layer2Labs/rgb-node/blob/master/README.md
 
 # Coming Soon
 
-*Oracles by DLC
+Available on RGB network.
