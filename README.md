@@ -15,11 +15,13 @@ With use cases how Lending, borrow, collateral. We will use output and input for
 
 *Buy/Sell for Bitcoin;
 
-*Decentralized.
+*Decentralized;
+
+*DEX on RGB network.
 
 # Running Node RGB
 
-Source: https://github.com/Layer2Labs/rgb-node/blob/master/README.md
+Source: https://github.com/RGB-WG/rgb-node
 
 # Coming Soon
 
